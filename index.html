@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-5/css/fontawesome-all.min.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="navs">
+            <div class="logo"><img src="img-1.png" alt=""></div>
+            <ul class="nav">
+                <li><a href="">news</a></li>
+                <li><a href="">story</a></li>
+                <li><a href="">character</a></li>
+                <li><a href="">comics</a></li>
+                <li><a href="">products</a></li>
+                <li><a href="">events</a></li>
+            </ul>
+            <il class="sci">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-github"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </il>
+        </div>
+    </div>
+
+    <section class="hero-section my-swiper">
+        <div class="content swiper-wrapper">
+            <div class="cards card-1 swiper-slide">
+                <div class="overlay"></div>
+                <div class="content-text">
+                    <h3>kaneki ken</h3>
+                    <p>"It's not me who is wrong, what is wrong is this world</p>
+                    <ul class="trailers">
+                        <li>
+                            <p>trailer #1</p>
+                            <div class="images">
+                                <img src="trailer-1.jpg" alt="">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <p>trailer #1</p>
+                            <div class="images">
+                                <img src="trailer-2.jpg" alt="">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards card-2 swiper-slide">
+                <div class="overlay"></div>
+                <div class="content-text">
+                    <h3>rize kamishiro</h3>
+                    <p>"there are time when you have to give up on one thing to preseve the other"</p>
+                    <ul class="trailers">
+                        <li>
+                            <p>trailer #1</p>
+                            <div class="images">
+                                <img src="trailer-3.jpg" alt="">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <p>trailer #1</p>
+                            <div class="images">
+                                <img src="trailer-4.jpg" alt="">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards card-3 swiper-slide">
+                <div class="overlay"></div>
+                <div class="content-text">
+                    <h3>touka kirisima</h3>
+                    <p>"there's no way someone who can't even proteect himself can protect anyone else, is there.?"</p>
+                    <ul class="trailers">
+                        <li>
+                            <p>trailer #1</p>
+                            <div class="images">
+                                <img src="trailer-5.jpg" alt="">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <p>trailer #1</p>
+                            <div class="images">
+                                <img src="trailer-6.png" alt="">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <script>
+        var swiper = new Swiper(".hero-section", {
+            direction : "vertical",
+            pagination:{
+                el:".swiper-pagination",
+                clickable: true,
+            },
+        })
+    </script>
+</body>
+</html>
